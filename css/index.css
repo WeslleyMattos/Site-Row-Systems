@@ -50,7 +50,6 @@ nav li a:hover{
 nav.hidden {
     opacity: 0;
     transform: translateY(-100%);
-    transition: opacity 0.5s, transform 0.5s;
 }
 
 /* Classe para mostrar o menu com a animação */
@@ -68,15 +67,15 @@ nav.fixed {
     z-index: 1000;
     background: linear-gradient(0deg, rgba(110,110,110,1) 0%, rgba(0,0,0,1) 100%);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 1; /* Garantir que o menu seja totalmente visível */
-    transform: translateY(0); /* Garantir que o menu esteja na posição correta */
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.5s, transform 0.5s;
 }
 
 
 .banner{
     height: 100vh;
-    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('img/background.jpg');
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
