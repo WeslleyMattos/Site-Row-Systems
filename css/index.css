@@ -87,3 +87,35 @@ nav li a:hover {
   font-size: 58px;
   font-weight: 600;
 }
+
+.mural {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mural-column {
+  flex: 2;
+  padding: 90px;
+  box-sizing: border-box;
+}
+
+.mural-sobre {
+  color: #ffffff;
+  background: rgb(219, 29, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 29, 253, 0.8701855742296919) 27%,
+    rgba(252, 242, 69, 0.9598214285714286) 93%
+  );
+}
+
+.mural-blog {
+  color: #ffffff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(96, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
