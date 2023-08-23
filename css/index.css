@@ -11,6 +11,7 @@
 body {
   font-family: "aileron";
   margin: 0px;
+  background: radial-gradient(circle, #aaaaaa 0%, #000 100%);
 }
 
 nav {
@@ -88,20 +89,30 @@ nav li a:hover {
   font-weight: 600;
 }
 
-.mural {
-  display: flex;
-  justify-content: space-between;
+#mural {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.mural-column {
-  flex: 2;
+.mural-itens {
   padding: 90px;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
+  margin: 60px;
+  border-radius: 20px;
 }
 
-.mural-sobre {
+#mural-blog {
   color: #ffffff;
-  background: rgb(219, 29, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(160, 96, 0, 0.87) 0%,
+    rgba(255, 153, 0, 0.96) 50%,
+    rgba(255, 219, 56, 0.99) 100%
+  );
+}
+
+#mural-portfolio {
+  color: #ffffff;
   background: linear-gradient(
     90deg,
     rgba(219, 29, 253, 0.8701855742296919) 27%,
@@ -109,13 +120,57 @@ nav li a:hover {
   );
 }
 
-.mural-blog {
+#mural-sobre {
   color: #ffffff;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(96, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
+    rgba(96, 9, 121, 1) 0%,
+    #6f01ff 60%,
+    rgb(81, 98, 255) 100%
   );
+}
+
+#mural-suporte {
+  color: #ffffff;
+
+  background: linear-gradient(
+    90deg,
+    rgb(124, 0, 0) 0%,
+    rgb(255, 21, 21) 35%,
+    rgb(255, 123, 0) 100%
+  );
+}
+
+#mural-contato {
+  color: #ffffff;
+
+  background: linear-gradient(
+    90deg,
+    rgb(0, 23, 124) 0%,
+    rgb(0, 89, 255) 70%,
+    rgb(84, 201, 255) 100%
+  );
+}
+
+#mural-servicos {
+  color: #ffffff;
+
+  background: linear-gradient(
+    90deg,
+    rgb(15, 129, 0) 0%,
+    rgb(0, 255, 34) 70%,
+    rgb(191, 255, 88) 100%
+  );
+}
+
+@media screen and (max-width:800px) {
+  #mural {
+    grid-template-columns: 1fr;
+  }
+
+  .mural-itens{
+    padding: 20px;
+    margin: 10px;
+  }
 }
