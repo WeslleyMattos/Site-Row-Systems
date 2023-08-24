@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\index.css" />
+    <script src="js\script.js"></script>
+    <title>BLOG | Row Systems</title>
+    <style>
+        .post{
+            height: 30vh;
+            width: 30vw;
+            background-color: blueviolet;
+            margin: 30px;
+            border-radius: 20px;
+            text-align:justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            color:#ffff
+        }
+
+        
+
+        #conteudo-blog{
+            width: 97vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #destaques-all{
+            display: grid;
+            grid-template-columns: 10fr 1fr;
+            margin-left: 1vw;
+           
+        }
+
+        #destaques-almost-all{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+           
+        }
+
+        #nao-destaques{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        #destaque-um{
+            height: 80vh;
+            width:55vw;
+            margin-left: 2vw;
+        }
+
+        #destaque-dois,#destaque-tres{
+            width: 40vw;
+            margin-left: 0vw;
+            height: 38vh;
+        }
+
+       #destaque-dois{
+        margin-bottom: 0vh;
+       }
+
+       #destaque-tres{
+        margin-top: 2vh;
+        margin-bottom: 0vh;
+       }
+
+    </style>
+  </head>
+  <body>
+    
+
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo2.png" alt="logo row systems"
+        /></a>
+      </div>
+
+      <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="blog.html"> Blog </a></li>
+        <li><a href="sobre.html"> Sobre </a></li>
+        <li><a href="portifolio.html"> Portifólio </a></li>
+        <li><a href="servicos.html"> Serviços </a></li>
+        <li><a href="contato.html"> Contato </a></li>
+        <li><a href="suporte.html"> Suporte </a></li>
+      </ul>
+    </nav>
+
+    <div id="conteudo-blog">
+        <div id="destaques-all">
+            <div class="post" id="destaque-um"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div id="destaques-almost-all">
+                <div class="post" id="destaque-dois"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+                <div class="post" id="destaque-tres"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            </div>
+        </div>
+        <div id="nao-destaques">
+            <div class="post" id="um"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div class="post" id="dois"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div class="post" id="tres"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div class="post" id="quatro"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div class="post" id="cinco"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div class="post" id="seis"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div class="post" id="sete"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div class="post" id="oito"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+            <div class="post" id="nove"><a>Vasco da Gama anuncia contratação de Kilian Mbape</a></div>
+        </div>
+    </div>
+
+  </body>
+</html>

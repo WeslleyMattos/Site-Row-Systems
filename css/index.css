@@ -27,6 +27,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
 
 nav .logo a {
@@ -59,7 +60,7 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: white;
+  background-color: rgb(241, 116, 13);
   color: black;
 }
 
@@ -95,82 +96,51 @@ nav li a:hover {
 }
 
 .mural-itens {
+  
   padding: 90px;
   /*box-sizing: border-box;*/
   margin: 60px;
   border-radius: 20px;
+  color: #e4e4e4;
+ 
 }
 
-#mural-blog {
-  color: #ffffff;
+#mural-sobre,#mural-suporte,#mural-portfolio{
   background: linear-gradient(
     90deg,
-    rgba(160, 96, 0, 0.87) 0%,
-    rgba(255, 153, 0, 0.96) 50%,
-    rgba(255, 219, 56, 0.99) 100%
-  );
+    rgb(37, 0, 124) 0%,
+    rgb(31, 53, 255) 50%,
+    rgb(0, 153, 255) 100%)
 }
 
-#mural-portfolio {
-  color: #ffffff;
+#mural-blog,#mural-servicos,#mural-contato{
   background: linear-gradient(
     90deg,
-    rgba(219, 29, 253, 0.8701855742296919) 27%,
-    rgba(252, 242, 69, 0.9598214285714286) 93%
-  );
+    rgb(0, 153, 255) 0%,
+    rgb(31, 53, 255) 50%,
+    rgb(37, 0, 124) 100%)
 }
 
-#mural-sobre {
-  color: #ffffff;
-  background: rgb(2, 0, 36);
+.mural-button{
+  border-radius: 8px;
+  font-size: 1.2rem;
   background: linear-gradient(
-    90deg,
-    rgba(96, 9, 121, 1) 0%,
-    #6f01ff 60%,
-    rgb(81, 98, 255) 100%
-  );
+90deg,
+rgb(250, 19, 2) 0%,
+rgb(204, 116, 0) 100%
+);
+border: 2px solid #2e64a3;
+transition: 50ms linear;
 }
-
-#mural-suporte {
-  color: #ffffff;
-
+.mural-button:hover{
+  border-radius: 8px;
+  font-size: 1.3rem;
   background: linear-gradient(
-    90deg,
-    rgb(124, 0, 0) 0%,
-    rgb(255, 21, 21) 35%,
-    rgb(255, 123, 0) 100%
-  );
+90deg,
+rgb(255, 151, 54) 0%,
+rgb(197, 177, 0) 100%
+
+);
 }
 
-#mural-contato {
-  color: #ffffff;
 
-  background: linear-gradient(
-    90deg,
-    rgb(0, 23, 124) 0%,
-    rgb(0, 89, 255) 70%,
-    rgb(84, 201, 255) 100%
-  );
-}
-
-#mural-servicos {
-  color: #ffffff;
-
-  background: linear-gradient(
-    90deg,
-    rgb(15, 129, 0) 0%,
-    rgb(0, 255, 34) 70%,
-    rgb(191, 255, 88) 100%
-  );
-}
-
-@media screen and (max-width:800px) {
-  #mural {
-    grid-template-columns: 1fr;
-  }
-
-  .mural-itens{
-    padding: 20px;
-    margin: 10px;
-  }
-}
