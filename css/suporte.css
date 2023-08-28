@@ -1,0 +1,133 @@
+main.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main.container section.container-forms {
+  margin: 5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px #000;
+  width: 60vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+main.container section.container-forms header.container-title {
+  background-color: #fff;
+  padding: 20px;
+  color: #cf5720;
+  text-align: center;
+}
+
+main.container section.container-forms form.form {
+  padding: 20px;
+}
+
+main.container section.container-forms form.form div.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+main.container section.container-forms form.form div.form-control label {
+  color: #000;
+  font-size: 1.1 rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+main.container section.container-forms form.form div.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 90%;
+  padding: 10px;
+}
+
+main.container section.container-forms form.form div.form-control textarea {
+  padding: 5px;
+  border: 2px solid #f0f0f0;
+  font-size: 1rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+main.container section.container-forms form.form div.form-control i {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  visibility: hidden;
+}
+
+main.container section.container-forms form.form div.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+main.container section.container-forms form.form button {
+  background-color: #dbd9d8e3;
+  border: 2px solid #181102;
+  box-shadow: 2px 2px 4px -2px #000;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 5px;
+  width: 8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*Trabalhando com erro e sucesso*/
+main.container
+  section.container-forms
+  form.form
+  div.form-control.success
+  input {
+  border-color: #42f14b;
+}
+
+main.container
+  section.container-forms
+  form.form
+  div.form-control.success
+  i.fa-check-circle {
+  border-color: #42f14b;
+  visibility: visible;
+}
+
+main.container section.container-forms form.form div.form-control.error input {
+  border-color: #e74c3c;
+}
+
+main.container
+  section.container-forms
+  form.form
+  div.form-control.error
+  i.fa-exclamation-circle {
+  border-color: #e74c3c;
+  visibility: visible;
+}
+
+main.container section.container-forms form.form div.form-control.error {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+main.container section.container-forms form.form div.form-control.error small {
+  visibility: visible;
+}
+
+@media screen and (max-width: 1050px) {
+  main.container section.container-forms {
+    width: 80vw;
+  }
+}
